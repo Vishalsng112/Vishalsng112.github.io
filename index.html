@@ -1,48 +1,183 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-  <head>
-    <title>My Homepage</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Homepage</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="sections/coach.html">Coach</a></li>
-          <li><a href="#alumni">Alumni</a></li>
-          <li><a href="#club">Club</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to the homepage.</p>
-      </section>
-      <section id="coach">
-        <h2>Coach</h2>
-        <p>Learn about the coaches.</p>
-      </section>
-      <section id="alumni">
-        <h2>Alumni</h2>
-        <p>Meet the alumni.</p>
-      </section>
-      <section id="club">
-        <h2>Club</h2>
-        <p>Discover the club.</p>
-      </section>
-      <section id="gallery">
-        <h2>Gallery</h2>
-        <p>View the gallery.</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2022 My Homepage</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Researcher Website</title>
+  <!-- Add any CSS styles here -->
+  <style>
+    /* Add your styles here */
+    header {
+      background-image: url(header-image.jpg);
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+    .intro {
+      margin-bottom: 50px;
+    }
+    .intro h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .intro p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .research-interests {
+      margin-bottom: 50px;
+    }
+    .research-interests h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .research-interests ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .research-interests li {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .research-experience {
+      margin-bottom: 50px;
+    }
+    .research-experience h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .publications {
+      margin-bottom: 50px;
+    }
+    .publications h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .publications ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .publications li {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .teaching-experience {
+      margin-bottom: 50px;
+    }
+    .teaching-experience h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .awards-recognitions {
+      margin-bottom: 50px;
+    }
+    .awards-recognitions h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .contact-form {
+      margin-bottom: 50px;
+    }
+    .contact-form h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .contact-form form {
+      margin-top: 20px;
+    }
+    .contact-form input[type="text"], .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+
+<body>
+  <header>
+    <!-- Header Content -->
+  </header>
+  <div class="container">
+    <div class="intro">
+      <h1>Vishal Singh</h1>
+      <p>Brief introduction about you and your research background</p>
+    </div>
+    <div class="research-interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Research area 1</li>
+        <li>Research area 2</li>
+        <li>Research area 3</li>
+      </ul>
+    </div>
+    <div class="research-experience">
+      <h2>Research Experience</h2>
+      <!-- Research Experience Content -->
+    </div>
+    <div class="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>
+          <h3>Paper 1</h3>
+          <p>Abstract for Paper 1</p>
+        </li>
+        <li>
+          <h3>Paper 2</h3>
+          <p>Abstract for Paper 2</p>
+        </li>
+      </ul>
+    </div>
+    <div class="teaching-experience">
+      <h2>Teaching Experience</h2>
+      <!-- Teaching Experience Content -->
+    </div>
+    <div class="awards-recognitions">
+      <h2>Awards & Recognitions</h2>
+      <!-- Awards & Recognitions Content -->
+    </div>
+    <div class="contact-form">
+      <h2>Contact</h2>
+      <form action="submit-form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
 </html>
+
